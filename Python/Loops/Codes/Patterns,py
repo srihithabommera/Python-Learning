@@ -1,0 +1,45 @@
+# Draw square pattern
+a=int(input("Enter a value: "))
+for i in range(a): #rows
+    for j in range(a): #columns
+        print("~",end=" ")
+    print()
+print("1.-------------------------------")
+
+
+# Draw Right angled triangle/Pyramid
+a=int(input("Enter a value: "))
+for i in range(a):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+print("2.-------------------------------")
+
+
+# Draw an Isoscles Traingle / Christmas tree/ Pattern.
+a=5
+for i in range(a):# outer loop which handles rows
+    for j in range(a-i-1):# loop to create spaces
+        print(" ",end=" ")
+    for k in range(2*i+1):# loop for procedure
+        print("o",end=" ")
+    print()
+print('3.---------------------------------------')
+
+# Draw number Patterns
+a=int(input("Enter a rows: "))
+for i in range(a+1):
+    for j in range(i):
+        print(i,end=" ")
+    print()
+print("4.-------------------------------")
+
+
+# Draw a numerical pyramid with increasing no.
+a=7
+start=1
+for j in range(a):
+    for i in range(j):
+        print(i+1,end=" ")
+    print()
+print("5.-------------------------------")
